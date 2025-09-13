@@ -1,0 +1,54 @@
+.answer-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 150px;
+  font-family: "Arial", sans-serif;
+}
+
+#yesBtn,
+#noBtn {
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+
+#yesBtn {
+  background-color: #28a745;
+}
+
+#noBtn {
+  background-color: #dc3545;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(5px, 0px);
+  }
+  50% {
+    transform: translate(-5px, 0px);
+  }
+  75% {
+    transform: translate(5px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+      }
